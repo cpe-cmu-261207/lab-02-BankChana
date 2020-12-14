@@ -26,6 +26,11 @@
                     <h2>
                         <a href="contact.html" style="color: black;">Contact</a>
                     </h2>
+                </td>  
+                <td style="background:#87c0c2">
+                    <h2>
+                        <a href="cal.html" style="color: black;">CalculateGPA</a>
+                    </h2>
                 </td>    
             </tr>
         </tbody>
@@ -56,38 +61,49 @@
                 <br>       
                 <form action="#">
                     <table width="80%" align="center" style="padding: 15px;   border:1px solid;">
-                        <tbody><tr>
-                            <td><h3><label>Subject:</label></h3></td>
-                            <td><input type="text" name="subject" value="" width="50px"> </td>
-                        </tr>
-                        <tr>
-                            <td><h3> <label>Massage:</label></h3></td>
-                            <td> <textarea name="msg"></textarea> </td>
-                        </tr>
-                        <tr>
-                            <td><h3><label>Name:</label></h3></td>
-                            <td><input type="text" name="fullname" value=""> </td>
-                        </tr>
-                        <tr>
-                            <td><h3><label>Gender:</label></h3></td>
-                            <td>
-                                <input type="radio" name="gender" value="male"> male 
-                                <input type="radio" name="gender" value="female"> female 
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><h3><label>Phone:</label></h3></td>
-                            <td><input type="tel" name="phone" value=""> </td>
-                        </tr>
-                        <tr>
-                            <td><h3><label>Email:</label></h3></td>
-                            <td><input type="email" value=""></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><input type="submit" name="submit" value="submit"></td>
-                        </tr>
-                    </tbody></table>
+                        <form class="row g-3">
+                            <div class="col-md-4">
+                              <label for="validationDefault01" class="form-label">First name</label>
+                              <input type="text" class="form-control" id="validationDefault01" value=" " required>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationDefault02" class="form-label">Last name</label>
+                              <input type="text" class="form-control" id="validationDefault02" value=" " required>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationDefaultUsername" class="form-label">Username</label>
+                              <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="validationDefault03" class="form-label">City</label>
+                              <input type="text" class="form-control" id="validationDefault03" required>
+                            </div>
+                            <div class="col-md-3">
+                              <label for="validationDefault04" class="form-label">State</label>
+                              <select class="form-select" id="validationDefault04" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="col-md-3">
+                              <label for="validationDefault05" class="form-label">Zip</label>
+                              <input type="text" class="form-control" id="validationDefault05" required>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                  Agree to terms and conditions
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
+                          </form></table>
                     </form>
             </tr>
         </tbody>
